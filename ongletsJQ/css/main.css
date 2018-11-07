@@ -1,0 +1,69 @@
+body{
+    background : lightgrey ;
+    font-family: "Adobe Arabic";
+    font-size : 20px;
+    color : #333;
+}
+
+
+#panneau{
+    margin : 30px;
+}
+#panneau #onglets{
+
+}
+#panneau #onglets {
+
+}
+#panneau #onglets  li{
+    float:left;
+    width : 125px;
+    height : 30px;
+    line-height : 30px;
+    background : #222;
+    text-align : center;
+    margin-right : 5px;
+    color : #fff;
+    cursor: pointer;
+}
+#panneau #onglets  li.actif{
+    background : white;
+    color : black;
+
+}
+#panneau #contenus {
+    font-size: 30px;
+    font-family: "Adobe Arabic";
+}
+#panneau #contenus  li{
+    /*Je défini les propriétés communes
+    à ts les contenus*/
+    background : white;
+    width : 500px;
+    padding : 20px;
+
+    /*et je les masque*/
+    display : none;
+}
+#panneau #contenus  li.actif{
+
+    /* j'affiche uniquement le li de class actif */
+    display : block;
+}
+
+/***** HACKS CSS *******/
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
